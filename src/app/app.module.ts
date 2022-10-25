@@ -30,8 +30,8 @@ import { TranslocoRootModule } from './transloco-root.module';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
     BrowserAnimationsModule,
+    AppRoutingModule,
     MatSliderModule,
     MatToolbarModule,
     MatIconModule,
