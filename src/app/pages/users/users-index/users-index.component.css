@@ -1,0 +1,45 @@
+/* *{
+    box-sizing: border-box;
+}
+
+table {
+    width: 100%;
+}
+
+.mat-column-actions{
+    text-align: center;
+}
+
+.actions{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 0.1rem;
+}
+
+.show-button{
+    color: blue;
+}
+
+.edit-button{
+    color: orange;
+}
+
+.delete-button{
+    cursor: pointer;
+    color: rgb(31, 31, 31);
+}
+
+.filter-container{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 0 2rem 0 2rem;
+    margin-right: 5rem;
+}
+
+.filter{
+    flex: 1;
+} */

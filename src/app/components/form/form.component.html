@@ -1,0 +1,16 @@
+<ng-container *transloco="let text; read: 'table'">
+    <form class="d-flex flex-column py-3" [formGroup]="form" (ngSubmit)="onSubmit()">
+        <mat-form-field class="example-full-width" appearance="fill">
+            <mat-label>{{text('firstName')}}</mat-label>
+            <input matInput placeholder="Inserisci nome" formControlName="firstName">
+        </mat-form-field>
+        <mat-form-field class="example-full-width" appearance="fill">
+            <mat-label>{{text('lastName')}}</mat-label>
+            <input matInput placeholder="Inserisci cognome" formControlName="lastName">
+        </mat-form-field>
+        <mat-form-field class="example-full-width" appearance="fill">
+            <mat-label>{{text('phone')}}</mat-label>
+            <input matInput placeholder="Inserisci il tuo numero di telefono" formControlName="phone">
+        </mat-form-field>
+    </form>
+</ng-container>

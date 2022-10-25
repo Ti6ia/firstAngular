@@ -1,0 +1,21 @@
+<ng-container *transloco="let text">
+    <div class="d-flex justify-content-center">
+    <div class="col-6 mt-3">
+        <mat-card class="d-flex justify-content-center">
+            <div class="col-8">
+                <mat-card-title class="pt-2">{{text('edit.h1')}}</mat-card-title>
+                <app-form [user]="user" (sendingForm)="activateSubmit($event)"></app-form>
+                <div class="row d-flex justify-content-between mb-3">
+                    <div class="col-9 d-flex flex-row justify-content-start">
+                        <button class="d-flex justify-content-center" mat-raised-button color="primary" type="submit" [disabled]="!isValid" (click)="editUser()">{{text('edit.btnEdit')}}</button>
+                    </div>
+                    <div class="col-3 d-flex flex-row justify-content-end">
+                        <button class="d-flex justify-content-center" mat-raised-button routerLink="/users">{{text('edit.btnCancel')}}</button>
+                    </div>
+                </div>
+            </div>
+        </mat-card>
+    </div>
+</div>
+</ng-container>
+

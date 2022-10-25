@@ -1,0 +1,26 @@
+{
+    "table": {
+        "firstName": "First Name",
+        "lastName": "Last Name",
+        "actions": "Actions",
+        "phone": "Phone"
+    },
+    "sidenav": {
+        "new": "Add user"
+    },
+    "new": {
+        "h1": "Add new user",
+        "btnAdd": "Add user",
+        "btnCancel": "Cancel"
+    },
+    "edit": {
+        "h1": "Edit user",
+        "btnEdit": "Edit user",
+        "btnCancel": "Cancel"
+    },
+    "delete": {
+        "h1": "Delete user",
+        "btnDelete": "Delete user",
+        "btnCancel": "Cancel"
+    }
+}

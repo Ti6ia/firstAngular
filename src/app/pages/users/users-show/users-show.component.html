@@ -1,0 +1,32 @@
+<div class="row d-flex justify-content-center">
+    <mat-card class="col-10 col-md-8 col-lg-6 mt-3">
+        <mat-card-title class="pt-2">{{user.firstName}} {{user.lastName}}</mat-card-title>
+        <mat-card-content>
+            <mat-list role="list">
+                <mat-list-item role="listitem">
+                    <div class="row w-100">
+                        <span class="col-12 col-sm-6 col-md-4 col-lg-2 mat-body-strong">ID:</span>
+                        <span class="col-12 col-sm-6 col-md-8 col-lg-10">{{user.id}}</span>
+                    </div>
+                </mat-list-item>
+                <mat-list-item role="listitem">
+                    <div class="row w-100">
+                        <span class="col-12 col-sm-6 col-md-4 col-lg-2 mat-body-strong">Nome:</span>
+                        <span class="col-12 col-sm-6 col-md-8 col-lg-10">{{user.firstName}}</span>
+                    </div>
+                </mat-list-item>
+                <mat-list-item role="listitem">
+                    <div class="row w-100">
+                        <span class="col-12 col-sm-6 col-md-4 col-lg-2 mat-body-strong">Cognome:</span>
+                        <span class="col-12 col-sm-6 col-md-8 col-lg-10">{{user.lastName}}</span>
+                    </div>
+                </mat-list-item>
+                <mat-list-item role="listitem">
+                    <div class="row w-100">
+                        <span class="col-12 col-sm-6 col-md-4 col-lg-2 mat-body-strong">Telefono:</span>
+                        <span class="col-12 col-sm-6 col-md-8 col-lg-10">{{user.phone}}</span></div>
+                </mat-list-item>
+            </mat-list>
+        </mat-card-content>
+    </mat-card>
+</div>

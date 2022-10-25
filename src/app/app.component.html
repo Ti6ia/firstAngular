@@ -1,0 +1,27 @@
+<ng-container *transloco="let text; read: 'sidenav'">
+  <mat-toolbar class="toolbar">
+    <button (click)="toggleMenu()" mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <span class="logo" routerLink="/users">My App</span>
+    <span class="example-spacer"></span>
+    <button style="font-size: 0.7rem;" (click)="toIta()">IT</button>
+    <button style="font-size: 0.7rem;" (click)="toEng()">EN</button>
+    <a mat-icon-button color="primary" routerLink="users/new" routerLinkActive="active" ariaCurrentWhenActive="page"><i
+        class="material-icons add-icon">add</i></a>
+
+  </mat-toolbar>
+
+  <mat-sidenav-container class="h-100">
+    <mat-sidenav mode="side" [(opened)]="opened" class="row w-25">
+      <div class="col d-flex flex-column gap-3">
+        <button routerLink="/users" (click)="toggleMenu()">Index</button>
+        <button routerLink="/users/new" (click)="toggleMenu()">{{text('new')}}</button>
+      </div>
+    </mat-sidenav>
+
+    <mat-sidenav-content>
+      <router-outlet></router-outlet>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+</ng-container>

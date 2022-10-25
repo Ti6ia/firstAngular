@@ -1,0 +1,24 @@
+<ng-container *transloco="let text">
+  <h1 mat-dialog-title class="mb-0">{{text('delete.h1')}}</h1>
+  <mat-list role="list">
+    <mat-list-item role="listitem" class="row">
+      <span class="col-5 mat-body-strong">ID:</span>
+      <span class="col-7">{{data.id}}</span>
+    </mat-list-item>
+    <mat-list-item role="listitem" class="row">
+      <span class="col-5 mat-body-strong">{{text('table.firstName')}}</span>
+      <span class="col-7">{{data.firstName}}</span>
+    </mat-list-item>
+    <mat-list-item role="listitem" class="row">
+      <span class="col-5 mat-body-strong">{{text('table.lastName')}}</span>
+      <span class="col-7">{{data.lastName}}</span>
+    </mat-list-item>
+  </mat-list>
+  <div class="d-flex justify-content-center">
+    <div mat-dialog-actions class="mt-2">
+      <button mat-button mat-dialog-close cdkFocusInitial
+        (click)="deleteUser(data.id)">{{text('delete.btnDelete')}}</button>
+      <button mat-button mat-dialog-close>{{text('delete.btnCancel')}}</button>
+    </div>
+  </div>
+</ng-container>
